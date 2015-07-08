@@ -32,4 +32,10 @@ describe "Animal" do
 			end
 		end
 
+	describe "feed" do
+		it "returns 'NOM NOM NOM' if the animal is not sleeping" do
+			expect(laura.feed)to eq('NOM NOM NOM') 
+		end 
+	end 
+
 end # ends describe "Animal"
