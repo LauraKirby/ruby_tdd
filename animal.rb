@@ -17,7 +17,7 @@ class Animal
 	def feed
 		if @sleeping == false  
 		p "NOM NOM NOM"
-	  end 
+		end
 	end 
 
 end # end class 

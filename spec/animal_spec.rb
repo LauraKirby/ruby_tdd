@@ -37,5 +37,4 @@ describe "Animal" do
 			expect(michelle.feed).to eq('NOM NOM NOM') 
 		end 
 	end 
-
 end # ends describe "Animal"
