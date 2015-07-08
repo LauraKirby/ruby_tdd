@@ -1,21 +1,28 @@
 require "spec_helper"
 require_relative '../animal.rb'
 
-describe "Animal" do 
+# let (:laura){laura = Animal.new("laura", 28, false)}
 
-	# describe "Animal class" do 
-	# 	xit "should return true for an existing Animal class" do
-	# 	p Animal.self
-	# 	expect(Animal).to be_instance_of(object)
-	# 	end
-	# end
+describe "Animal" do 
 
 	describe "Animal class" do 
 		xit "should return true to show an Animal class exsits" do
-		#p Animal.self
-		expect(Animal).to be_instance_of(object)
+			#p Animal.self
+			expect(Animal).to be(Animal)
 		end
 	end 
 
+	describe "instance of Animal class" do 
+		it "instance.name should return a value for the key 'name' "  do
+			laura = Animal.new("laura", 28, false)
+			expect(laura.name).to eq("laura")
+		end
+	end
+
+	describe "instance of Animal class" do 
+		it "instance.name should return a value for the key 'name' "  do
+			expect(laura.name).to eq("laura")
+			end
+		end
 
 end # ends describe "Animal"
