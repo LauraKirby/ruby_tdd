@@ -2,7 +2,7 @@ require "spec_helper"
 require_relative '../dog.rb'
 
 describe "Dog" do 
-	let (:rusty){Dog.new("kacey", 3)}
+	let (:rusty){Dog.new("rusty", 3)}
 		
 	describe "instance of Dog" do 
 		it "should inherit from Animal" do
@@ -12,7 +12,7 @@ describe "Dog" do
 	
 	describe "class variable favorite_treats" do
 		it "should be an array of treats" do 
-			expect(rust.favorite_treats).to be(["bacon", "liver"]) 
+			expect(Dog.favorite_treats).to eq(["bacon", "liver"]) 
 		end 
 	end 
 
