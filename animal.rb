@@ -11,6 +11,10 @@ class Animal
 		@sleeping = false
 	end 
 
+	def sleep 
+		@sleeping = true 
+	end 
+
 
 end # end class 
 
