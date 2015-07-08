@@ -1,5 +1,4 @@
 class Animal 
-	p Animal
 	attr_accessor :name, :age, :sleeping
 	def initialize(name, age, sleeping=true)
 		@name = name
@@ -15,10 +14,17 @@ class Animal
 		@sleeping = true 
 	end 
 
+	def feed
+		if @sleeping == false  
+		p "NOM NOM NOM"
+	  end 
+	end 
 
 end # end class 
 
-# laura = Animal.new("laura", 28,)
+# laura = Animal.new("laura", 28, false)
+
+# p laura.feed
 
 # #QUESTION
 # p laura #it's weird that you can view the entire object without getter methods, 
