@@ -1,9 +1,9 @@
 require "spec_helper"
 require_relative '../animal.rb'
 
-# let (:laura){laura = Animal.new("laura", 28, false)}
-
 describe "Animal" do 
+	let (:laura){Animal.new("laura", 28)}
+	let (:michelle){Animal.new("michelle", 28, false)}
 
 	describe "Animal class" do 
 		xit "should return true to show an Animal class exsits" do
@@ -13,23 +13,22 @@ describe "Animal" do
 	end 
 
 	describe "instance of Animal class" do 
-		it "instance.name should return a value for the key 'name' "  do
-			laura = Animal.new("laura", 28, false)
+		it "instance.name should return the string value for the key 'name' "  do
+			#laura = Animal.new("laura", 28, false)
 			expect(laura.name).to eq("laura")
 		end
 	end
 
-		describe "instance of Animal class" do 
-			it "instance.name should return a value for the key 'name' "  do
-				laura = Animal.new("laura", 28, false)
-				expect(laura.name).to eq("laura")
-		end
-	end 
-
-	describe "method and change sleeping from true to false" do 
-		it "instance.name should return a value for the key 'name' "  do
+	describe "wake_up" do 
+		it "instance method which changes sleeping to false"  do
 			laura = Animal.new("laura", 28)
 			expect(laura.wake_up).to eq(false)
+			end
+		end
+
+	describe "sleep" do 
+		it "instance method called sleep which changes sleeping to true"  do
+			expect(michelle.sleep).to eq(true)
 			end
 		end
 
