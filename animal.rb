@@ -7,11 +7,6 @@ class Animal
 		@sleeping = sleeping
 	end 
 
-	def wake_up 
-		@sleeping = false
-	end 
-
-
 end # end class 
 
 laura = Animal.new("laura", 28, false)

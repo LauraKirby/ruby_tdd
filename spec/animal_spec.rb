@@ -19,9 +19,17 @@ describe "Animal" do
 		end
 	end
 
-	describe "instance of Animal class" do 
+		describe "instance of Animal class" do 
+			it "instance.name should return a value for the key 'name' "  do
+				laura = Animal.new("laura", 28, false)
+				expect(laura.name).to eq("laura")
+		end
+	end 
+
+	describe "method and change sleeping from true to false" do 
 		it "instance.name should return a value for the key 'name' "  do
-			expect(laura.name).to eq("laura")
+			laura = Animal.new("laura", 28)
+			expect(laura.wake_up).to eq(false)
 			end
 		end
 
