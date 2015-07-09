@@ -6,7 +6,7 @@ class Dog < Animal
 	@@favorite_treats = []
 	
 
-	def initialize(name, age, sleeping=true) #passin arguments that you will use for Dog, you can pass an additional argument here
+	def initialize(name, age, sleeping=true) #pass in arguments that you will use for Dog, you can pass an additional argument here
 		super 
 		# Tim would do the the following:
 		# super(name, age, sleeping=true)
