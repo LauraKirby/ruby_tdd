@@ -25,4 +25,10 @@ describe "Dog" do
 		end
 	end 
 
+	describe "#instance method woof" do 
+		it "should return 'WOOF' if sleeping is false" do 
+			expect(rusty.woof).to eq("WOOF")
+		end 
+	end 
+
 end
