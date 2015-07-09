@@ -1,12 +1,13 @@
 require_relative './animal.rb'
 
 class Dog < Animal  
-	attr_accessor :favorite_treat
+	attr_accessor :favorite_treat, :woof
 	@@favorite_treats = []
 	def initialize(name, age, sleeping=true) #passin arguments that you will use for Dog, you can pass an additional argument here
 		super 
 		# Tim would do the the following:
 		# super(name, age, sleeping=true)
+		@woof = "WOOF"
 		@@favorite_treats = ["bacon", "bone", "peanut butter", "milk", "liver"]
 		@favorite_treat = @@favorite_treats.sample
 	end 
@@ -14,6 +15,10 @@ class Dog < Animal
 	# class method
 	def self.favorite_treats
 		@@favorite_treats # last line in a method is what gets returned
+	end 
+
+	def woof
+		@woof 
 	end 
 
 

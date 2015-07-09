@@ -31,4 +31,11 @@ describe "Dog" do
 		end 
 	end 
 
+	describe "#class method add_favorite_treat" do 
+		xit "should add a new treat to the favorite treats array" do 
+			expect(rusty.add_favorite_treats).to eq(rust.favorite_treats.count + 1)
+		end 
+	end
+	# QUESTION how can you test to see if something went up in count? 
+
 end
