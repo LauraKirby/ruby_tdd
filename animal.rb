@@ -1,3 +1,4 @@
+# wrong number of arguments 
 class Animal 
 	attr_accessor :name, :age, :sleeping
 	def initialize(name, age, sleeping=true)

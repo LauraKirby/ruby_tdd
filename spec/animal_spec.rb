@@ -19,20 +19,20 @@ describe "Animal" do
 		end
 	end
 
-	describe "wake_up" do 
+	describe "#wake_up" do 
 		it "instance method which changes sleeping to false"  do
 			laura = Animal.new("laura", 28)
 			expect(laura.wake_up).to eq(false)
 			end
 		end
 
-	describe "sleep" do 
+	describe "#sleep" do 
 		it "instance method called sleep which changes sleeping to true"  do
 			expect(michelle.sleep).to eq(true)
 			end
 		end
 
-	describe "feed" do
+	describe "#feed" do
 		it "returns 'NOM NOM NOM' if the animal is not sleeping" do
 			expect(michelle.feed).to eq('NOM NOM NOM') 
 		end 
